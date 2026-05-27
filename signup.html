@@ -1,0 +1,181 @@
+<!--
+    LuxAccessories - Sign Up Page (signup.html)
+    Group: DBI211 Assignment 2
+    Members: Jaden Sim Zi Yang (105806517), Juhair Bin Fayze (104398246)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your LuxAccessories account">
+    <title>Sign Up - LuxAccessories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="header-top">
+                <a href="index.html" class="logo">LuxAccessories</a>
+                <input class="search-bar" type="search" placeholder="Search accessories..." aria-label="Search accessories">
+                <div class="auth-links">
+                    <a href="signup.html" style="color: #7ca4e0; text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 18px; border-radius: 20px; border: 1px solid #4a6fa5; transition: all 0.25s; cursor: pointer;">Sign Up</a>
+                    <a href="login.html" style="color: #7ca4e0; text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 18px; border-radius: 20px; border: 1px solid #4a6fa5; transition: all 0.25s; cursor: pointer;">Log In</a>
+                </div>
+            </div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="accessories.html">Accessories &#9662;</a>
+                        <ul class="dropdown-content">
+                            <li><a href="accessories.html">All Accessories</a></li>
+                            <li><a href="accessories.html#glasses">Glasses</a></li>
+                            <li><a href="accessories.html#watches">Watches</a></li>
+                            <li><a href="accessories.html#rings">Rings</a></li>
+                            <li><a href="accessories.html#chains">Chains</a></li>
+                            <li><a href="accessories.html#bags">Bags</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content" id="main-content">
+            <article>
+                <div class="form-page">
+                    <h1 style="display:none;">Sign Up</h1>
+                    <h2>Create Your Account</h2>
+                    <p style="text-align:center; color:#aaa; margin-bottom:24px;">Join LuxAccessories for exclusive deals, faster checkout, and personalised recommendations.</p>
+
+                    <form id="signupForm" onsubmit="return handleSignup(event)">
+                        <fieldset>
+                            <legend>Personal Details</legend>
+                            <table class="form-table">
+                                <tr>
+                                    <td><label for="su-fname">First Name *</label></td>
+                                    <td><input type="text" id="su-fname" name="firstname" required placeholder="John"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="su-lname">Last Name *</label></td>
+                                    <td><input type="text" id="su-lname" name="lastname" required placeholder="Doe"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="su-email">Email Address *</label></td>
+                                    <td><input type="email" id="su-email" name="email" required placeholder="john@example.com"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="su-phone">Phone Number</label></td>
+                                    <td><input type="tel" id="su-phone" name="phone" placeholder="+61 400 000 000"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Gender</label></td>
+                                    <td>
+                                        <div class="radio-group">
+                                            <label><input type="radio" name="gender" value="male"> Male</label>
+                                            <label><input type="radio" name="gender" value="female"> Female</label>
+                                            <label><input type="radio" name="gender" value="other"> Prefer not to say</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Account Security</legend>
+                            <table class="form-table">
+                                <tr>
+                                    <td><label for="su-password">Password *</label></td>
+                                    <td><input type="password" id="su-password" name="password" required placeholder="Min 8 characters" minlength="8"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="su-confirm">Confirm Password *</label></td>
+                                    <td><input type="password" id="su-confirm" name="confirm" required placeholder="Re-enter password" minlength="8"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Preferences</legend>
+                            <table class="form-table">
+                                <tr>
+                                    <td><label>Interests (optional)</label></td>
+                                    <td>
+                                        <div class="checkbox-group">
+                                            <label><input type="checkbox" name="interest" value="glasses"> Glasses</label>
+                                            <label><input type="checkbox" name="interest" value="watches"> Watches</label>
+                                            <label><input type="checkbox" name="interest" value="rings"> Rings</label>
+                                            <label><input type="checkbox" name="interest" value="chains"> Chains</label>
+                                            <label><input type="checkbox" name="interest" value="bags"> Bags</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <div class="checkbox-group">
+                                            <label><input type="checkbox" name="newsletter" checked> Subscribe to newsletter</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                        <div class="form-buttons">
+                            <button type="reset" class="btn btn-secondary">Clear</button>
+                            <button type="submit" class="btn">Create Account</button>
+                        </div>
+                    </form>
+
+                    <div id="signup-success" class="success-msg">
+                        <p>Account created successfully! Welcome to LuxAccessories.</p>
+                        <p style="font-size:13px; color:#aaa; margin-top:6px;">Redirecting to homepage...</p>
+                    </div>
+
+                    <div class="form-link">
+                        <p>Already have an account? <a href="login.html">Log in here</a></p>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="offers.html">Offers</a>
+                <a href="contact.html">Contact</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <p>&copy; <a href="about.html">Group_5</a> | Last updated: 22 May 2026</p>
+            <p>LuxAccessories. All rights reserved. | DBI211 Web Technologies &amp; Cloud Computing</p>
+        </footer>
+    </div>
+
+    <script>
+        function handleSignup(e) {
+            e.preventDefault();
+            var pw = document.getElementById('su-password').value;
+            var cf = document.getElementById('su-confirm').value;
+            if (pw !== cf) {
+                alert('Passwords do not match. Please try again.');
+                return false;
+            }
+            var form = document.getElementById('signupForm');
+            var success = document.getElementById('signup-success');
+            form.style.display = 'none';
+            success.style.display = 'block';
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 2000);
+            return false;
+        }
+    </script>
+</body>
+</html>

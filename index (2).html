@@ -1,0 +1,173 @@
+<!--
+    LuxAccessories - Homepage (index.html)
+    Group: DBI211 Assignment 2
+    Members: Jaden Sim Zi Yang (105806517), Juhair Bin Fayze (104398246)
+    
+    This website is created for education and non-commercial use only.
+    It is an assignment for completion of unit, DBI211 Fundamentals of Web
+    Technology based on the Foundation (IT/Multimedia) course from
+    Swinburne University of Technology Sarawak Campus.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LuxAccessories - Premium accessories store for glasses, watches, rings, chains and bags">
+    <title>LuxAccessories - Premium Accessories Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="site-wrapper">
+        <!-- ===== HEADER ===== -->
+        <header class="site-header">
+            <div class="header-top">
+                <a href="index.html" class="logo">LuxAccessories</a>
+                <input class="search-bar" type="search" placeholder="Search accessories..." aria-label="Search accessories">
+                <div class="auth-links">
+                    <a href="signup.html" style="color: #7ca4e0; text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 18px; border-radius: 20px; border: 1px solid #4a6fa5; transition: all 0.25s; cursor: pointer;">Sign Up</a>
+                    <a href="login.html" style="color: #7ca4e0; text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 18px; border-radius: 20px; border: 1px solid #4a6fa5; transition: all 0.25s; cursor: pointer;">Log In</a>
+                </div>
+            </div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="accessories.html">Accessories &#9662;</a>
+                        <ul class="dropdown-content">
+                            <li><a href="accessories.html">All Accessories</a></li>
+                            <li><a href="accessories.html#glasses">Glasses</a></li>
+                            <li><a href="accessories.html#watches">Watches</a></li>
+                            <li><a href="accessories.html#rings">Rings</a></li>
+                            <li><a href="accessories.html#chains">Chains</a></li>
+                            <li><a href="accessories.html#bags">Bags</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="main-content" id="main-content">
+            <article>
+                <h1 style="display:none;">LuxAccessories Home</h1>
+
+                <!-- Hero Banner -->
+                <section class="hero-banner">
+                    <h1>Premium Accessories Collection</h1>
+                    <p>Discover the finest glasses, watches, rings, chains and bags curated just for you.</p>
+                    <a href="offers.html" class="btn">Shop Offers</a>
+                </section>
+
+                <!-- Introduction -->
+                <section>
+                    <h2 style="font-size:20px; margin-bottom:10px;">Welcome to LuxAccessories</h2>
+                    <p>LuxAccessories is your premier online destination for high-end fashion accessories. We specialise in bringing you carefully curated collections of designer glasses, luxury watches, elegant rings, stylish chains, and premium bags. Whether you are dressing up for a special occasion or adding the finishing touch to your everyday look, our collection has something for every taste and style.</p>
+                    <p>Our mission is to make luxury accessible. We source directly from trusted manufacturers and designers to bring you authentic products at competitive prices, backed by exceptional customer service and a hassle-free 30-day return policy.</p>
+                    <p><strong>Published URL:</strong> <a href="https://byet.host/luxaccessories" target="_blank" style="color:#7ca4e0;">https://byet.host/luxaccessories</a></p>
+                </section>
+
+                <!-- Disclaimer -->
+                <section style="margin-top:30px; padding:16px; background:rgba(74,111,165,0.1); border-radius:12px; border:1px solid rgba(74,111,165,0.2);">
+                    <p style="font-size:13px; color:#999; margin:0;"><strong>Disclaimer:</strong> This website is created for education and non-commercial use only. It is an assignment for completion of unit, DBI211 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.</p>
+                </section>
+
+                <!-- Today's Offers -->
+                <section>
+                    <div class="section-header">
+                        <h2 class="section-title">Today's Offers</h2>
+                        <a href="offers.html" class="view-all-link">View all &rarr;</a>
+                    </div>
+                    <div class="products-grid">
+                        <a href="offers.html" class="product-card">
+                            <img src="images/glasses1.jpg" alt="Ray-Ban Classic Sunglasses">
+                            <span>Ray-Ban Classic</span>
+                            <span class="price">USD 129.99</span>
+                        </a>
+                        <a href="offers.html" class="product-card">
+                            <img src="images/watch1.jpg" alt="Rolex Daytona Watch">
+                            <span>Rolex Daytona</span>
+                            <span class="price">USD 899.99</span>
+                        </a>
+                        <a href="offers.html" class="product-card">
+                            <img src="images/ring1.jpg" alt="Gold Ring Set">
+                            <span>Gold Ring Set</span>
+                            <span class="price">USD 249.99</span>
+                        </a>
+                        <a href="offers.html" class="product-card">
+                            <img src="images/chain1.jpg" alt="Silver Chain Necklace">
+                            <span>Silver Chain</span>
+                            <span class="price">USD 79.99</span>
+                        </a>
+                        <a href="offers.html" class="product-card">
+                            <img src="images/bag1.jpg" alt="Leather Tote Bag">
+                            <span>Leather Tote</span>
+                            <span class="price">USD 199.99</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Shop by Category -->
+                <section>
+                    <div class="section-header">
+                        <h2 class="section-title">Shop by Category</h2>
+                        <a href="accessories.html" class="view-all-link">View all &rarr;</a>
+                    </div>
+                    <div class="categories-grid">
+                        <a href="accessories.html#glasses" class="category-item">
+                            <div class="category-circle" style="background:url('images/glasses1.jpg') center/cover;"></div>
+                            <span class="category-label">Glasses</span>
+                        </a>
+                        <a href="accessories.html#watches" class="category-item">
+                            <div class="category-circle" style="background:url('images/watch1.jpg') center/cover;"></div>
+                            <span class="category-label">Watches</span>
+                        </a>
+                        <a href="accessories.html#rings" class="category-item">
+                            <div class="category-circle" style="background:url('images/ring1.jpg') center/cover;"></div>
+                            <span class="category-label">Rings</span>
+                        </a>
+                        <a href="accessories.html#chains" class="category-item">
+                            <div class="category-circle" style="background:url('images/chain1.jpg') center/cover;"></div>
+                            <span class="category-label">Chains</span>
+                        </a>
+                        <a href="accessories.html#bags" class="category-item">
+                            <div class="category-circle" style="background:url('images/bag1.jpg') center/cover;"></div>
+                            <span class="category-label">Bags</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- External links section -->
+                <section>
+                    <h2 style="font-size:20px; margin-bottom:10px;">Related Resources</h2>
+                    <p>Learn more about fashion and accessories from these trusted sources:</p>
+                    <ul class="steps-list">
+                        <li><a href="https://www.vogue.com" target="_blank" rel="noopener noreferrer" style="color:#7ca4e0;">Vogue Magazine</a> - The latest fashion trends and style guides</li>
+                        <li><a href="https://www.gq.com" target="_blank" rel="noopener noreferrer" style="color:#7ca4e0;">GQ Magazine</a> - Men's fashion, watches and accessories reviews</li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="offers.html">Offers</a>
+                <a href="contact.html">Contact</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <p>&copy; <a href="about.html">Group_5</a> | Last updated: 22 May 2026</p>
+            <p>LuxAccessories. All rights reserved. | DBI211 Web Technologies &amp; Cloud Computing</p>
+        </footer>
+    </div>
+</body>
+</html>
